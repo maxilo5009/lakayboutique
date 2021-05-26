@@ -1,0 +1,25 @@
+
+    INSERT INTO `na2uf_virtuemart_categories` (`virtuemart_category_id`, `virtuemart_vendor_id`, `category_template`, `category_layout`, `category_product_layout`, `products_per_row`, `limit_list_step`, `limit_list_initial`, `hits`, `cat_params`, `metarobot`, `metaauthor`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES 
+    
+    INSERT INTO `na2uf_virtuemart_categories_fr_fr` (`virtuemart_category_id`, `category_name`, `category_description`, `metadesc`, `metakey`, `customtitle`, `slug`) VALUES ('15', 'legumes', 'hjkhkjhjkhjkhjkh', 'bla', 'bllllll', '', 'legumes');
+
+
+INSERT INTO `na2uf_virtuemart_category_categories` (`id`, `category_parent_id`, `category_child_id`, `ordering`) VALUES (NULL, '0', '0', '0')
+UPDATE `na2uf_virtuemart_category_categories` SET `ordering` = '8' WHERE `na2uf_virtuemart_category_categories`.`id` = 15; //obligatoire
+UPDATE `na2uf_virtuemart_category_categories` SET `category_child_id` = '15' WHERE `na2uf_virtuemart_category_categories`.`id` = 15;
+
+
+
+INSERT INTO `na2uf_virtuemart_category_medias` (`id`, `virtuemart_category_id`, `virtuemart_media_id`, `ordering`) VALUES (NULL, '0', '0', '0');
+UPDATE `na2uf_virtuemart_categories` SET `cat_params` = 'show_store_desc=\"\"|showcategory_desc=\"\"|showcategory=\"\"|categories_per_row=\"\"|showproducts=\"\"|omitLoaded=\"\"|showsearch=\"\"|productsublayout=\"\"|featured=\"\"|featured_rows=\"\"|omitLoaded_featured=\"\"|discontinued=\"\"|discontinued_rows=\"\"|omitLoaded_discontinued=\"\"|latest=\"\"|latest_rows=\"\"|omitLoaded_latest=\"\"|topten=\"\"|topten_rows=\"\"|omitLoaded_topten=\"\"|recent=\"\"|recent_rows=\"\"|omitLoaded_recent=\"\"|' WHERE `na2uf_virtuemart_categories`.`virtuemart_category_id` = 15;
+
+
+ordre
+
+INSERT INTO `na2uf_virtuemart_categories` (`virtuemart_category_id`, `virtuemart_vendor_id`, `category_template`, `category_layout`, `category_product_layout`, `products_per_row`, `limit_list_step`, `limit_list_initial`, `hits`, `cat_params`, `metarobot`, `metaauthor`, `ordering`, `shared`, `published`, `created_on`, `created_by`, `modified_on`, `modified_by`, `locked_on`, `locked_by`) VALUES (NULL, '1', NULL, NULL, NULL, '', NULL, NULL, '0', '', '', '', '0', '0', '1', '0000-00-00 00:00:00.000000', '0', '0000-00-00 00:00:00.000000', '0', '0000-00-00 00:00:00.000000', '0');
+
+2
+
+INSERT INTO `na2uf_virtuemart_categories_fr_fr` (`virtuemart_category_id`, `category_name`, `category_description`, `metadesc`, `metakey`, `customtitle`, `slug`) VALUES ('17', 'fruit', 'description de la categorie', 'meta decrition', 'mots cle', 'titre customize', 'slug-fruit');
+3
+INSERT INTO `na2uf_virtuemart_category_categories` (`id`, `category_parent_id`, `category_child_id`, `ordering`) VALUES ('17', '0', '17', '0');
